@@ -30,6 +30,16 @@ p {
     padding: 0.6rem 1.8rem;
     border-radius: 5px;
 }
+#main-btn2 {
+    border: rgb(255, 175, 151) solid 1px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.8rem;
+    border-radius: 5px;
+    color: rgb(255, 164, 128);
+    font-size: 25px;
+    font-weight: bold;
+}
 
 #main-btn:focus,
 #main-btn:hover {
@@ -96,6 +106,7 @@ h1 {
 #nav-link-3,
 #nav-link-4 {
     color: #423e3a;
+    font-size: 25px;
 }
 
 .nav-link:hover {
@@ -758,6 +769,13 @@ a:hover {
 }
 .background .row {
     padding-bottom: 45px;
+    
+}
+.pb-4-h{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 1024px) {
