@@ -1,0 +1,69 @@
+.myproject{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    width:80%;
+    margin:auto;
+}
+.maincen{
+    display: inline-block;
+    color: white;
+    font-size:50px;
+    font-weight:bold;
+    padding:50px;
+}
+.procon{
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom,#4CAF53,white);
+}
+.myproject > div > img{
+    height: 300px;
+    width: 350px;
+    border:3px solid darkblue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.myproject > div > p{
+    font-size:20px;
+    /* line-height:1rem; */
+}
+
+.cen{
+    display: inline-block;
+    font-size:25px;
+    font-weight:bold;
+    color: #4CAF53;
+}
+.myproject > div > div > a{
+    color: white;
+    background-color: #4CAF53;
+    padding: 5px 10px 5px 10px;
+    font-size:25px;
+    border-radius:10px;
+    display: inline-block;
+}
+.probtn{
+    margin-top:50px;
+    /* margin-left: 100px;
+    padding-left: 30px; */
+}
+.apro{
+    margin-left: 20px;
+}
+
+@media (max-width:1000px){
+
+    .myproject{
+    grid-template-columns: repeat(2,1fr);
+
+    }
+}
+@media (max-width:700px){
+
+    .myproject{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+}

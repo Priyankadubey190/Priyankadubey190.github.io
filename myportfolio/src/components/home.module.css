@@ -1,0 +1,103 @@
+.tophome{
+    background: linear-gradient(to bottom right, #4299e0, white); 
+    width:100%;
+    padding-top: 160px;
+    height:700px;
+    
+}
+.topcen{
+    font-size:70px;
+    font-weight:bold;
+}
+.text{
+    display: flex;
+    justify-content:center;
+    margin-top:40px;
+    font-size:35px;
+    font-weight:bold;
+}
+.mymore{ 
+ 
+ height:auto;
+ background: linear-gradient(to top right, #094576, white) ;
+}
+.myheading{
+    font-size:50px;
+
+}
+.mytext{
+    text-align:justify;
+    font-size: 20px;
+    line-height:1.5em;
+}
+.texta{
+    display: inline-block;
+    border: 1px solid white;
+    color:white;
+    font-size:25px;
+    padding: 10px 20px;
+    border-radius:50px;
+
+    background-color:darkblue;
+    margin-top:50px;
+    
+}
+
+.myimg > img{
+ border-radius: 50px;
+}
+
+.homeflex{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+}
+.resbtn{
+    background-color: darkblue;
+    color: white;
+    padding:10px;
+    font-size:32px;
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+/* skill */
+.skillhed{
+    margin-top:50px;
+    font-size:50px;
+    font-weight:bold;
+}
+.skils{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    width: 70%;
+    margin: 5% auto 5% auto;
+}
+.skils > img{
+    height:150px;
+}
+
+@media (max-width:1000px){
+
+    .skils{
+    grid-template-columns: repeat(3,1fr);
+
+    }
+}
+
+@media (max-width:350px){
+
+    .skils{
+    grid-template-columns: repeat(2,1fr);
+
+    }
+    .homeflex{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+}

@@ -1,0 +1,13 @@
+.concontainer{
+    background: linear-gradient(to right, #4299e0, #4caf50);
+    height:400px;
+    padding:50px;
+}
+.flex{
+    display:flex;
+    margin-left:30px;
+    font-size:30px ;
+    width: 70px;
+    margin: auto;
+    /* justify-content: space-around; */
+}
