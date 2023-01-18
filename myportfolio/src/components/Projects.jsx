@@ -10,7 +10,7 @@ const Projects =()=> {
             <img src="https://github.com/Priyankadubey190/Priyankadubey190.github.io/raw/master/myportfolio/public/Screenshot%20(1527).png" alt="" width={"100%"}/>
             <center className={style.cen}>Solo e-commerce</center>
             <p> This is a solo e-commerce website. In this website I used React for frontend for backend mongoDB express.</p>
-            <div className={style.probtn}>
+            <div>
             <a href="https://my-solo-full-ecommerce.netlify.app/">Live Site</a>
             <a href="https://github.com/Priyankadubey190/full-crud-application/tree/main/full-stack-app" className={style.apro}>View Repo</a>
             </div>
