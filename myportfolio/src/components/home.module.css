@@ -83,7 +83,9 @@
 }
 
 @media (max-width:1000px){
-
+    .homeflex{
+        grid-template-columns: 1fr;
+    }
     .skils{
     grid-template-columns: repeat(3,1fr);
 
