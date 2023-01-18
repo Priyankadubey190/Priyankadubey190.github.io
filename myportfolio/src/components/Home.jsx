@@ -22,7 +22,7 @@ export default function Home() {
             <h2 className={style.myheading}>About Me</h2>
             <div  className={style.homeflex}>
              <div className={style.myimg}>
-                <img src="https://github.com/Priyankadubey190/full-crud-application/raw/main/full-stack-app/Backend/images/git-pic.jpg" alt="myprofilepic" height="300px" />
+                <img src="https://github.com/Priyankadubey190/Priyankadubey190.github.io/raw/master/myportfolio/public/IMG_20230113_143021.jpg" alt="myprofilepic" height="300px" />
              </div>
              <div>
                 <h2>
