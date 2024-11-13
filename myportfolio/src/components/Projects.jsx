@@ -97,8 +97,7 @@ const Projects = () => {
             This e-commerce website, built with Next.js, Tailwind CSS, and RTK
             Query, provides a seamless platform for users to purchase articles
             online. The site leverages functional components for a modern,
-            efficient design. Tailwind CSS ensures a responsive and visually
-            appealing user interface.
+            efficient design. Tailwind CSS ensures a responsive.
           </p>
           <div>
             <a href="https://wabisabiproject.com/">Live Site</a>
