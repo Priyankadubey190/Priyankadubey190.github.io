@@ -14,7 +14,6 @@
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
     "framer-motion": "^7.10.3",
-    "gh-pages": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-github-calendar": "^3.4.0",
@@ -49,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
