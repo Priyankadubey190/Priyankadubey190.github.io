@@ -1,76 +1,53 @@
 import GitHubCalendar from "react-github-calendar";
-import ReactTooltip from "react-tooltip"
 import React from "react";
+import style from "./calendar.module.css"; // Use an external CSS file for better responsiveness
 
 function Calender() {
-    // const selectLastHalfYear = contributions => {
-    //     const currentYear = new Date().getFullYear();
-    //     const currentMonth = new Date().getMonth();
-    //     const shownMonths = 8;
-      
-    //     return contributions.filter(day => {
-    //       const date = new Date(day.date);
-    //       const monthOfDay = date.getMonth();
-      
-    //       return (
-    //         date.getFullYear() === currentYear &&
-    //         monthOfDay > currentMonth - shownMonths &&
-    //         monthOfDay <= currentMonth
-    //       );
-    //     });
-    //   }
   return (
-    <div align="center" style={{padding:"5%"}}
-      // style={{align:"center",marginLeft:"10%",marginRight:"5%"}}
-    >
-      <h2>GitHub Contributions</h2>
+    <div className={style.calendarContainer}>
+      <h2 className={style.heading}>GitHub Contributions</h2>
       <GitHubCalendar
         username="Priyankadubey190"
         color="teal"
         blockSize={17}
         fontSize={20}
-        >
-
-      {/* <ReactTooltip delayShow={20} /> */}
-        </GitHubCalendar>
-      <div>
-      <p align="center">
-        <br />
-        <br />
+        className={style.githubCalendar}
+      />
+      <div className={style.statsContainer}>
+        <p>
           <a
             className="stat"
             href="https://github.com/Priyankadubey190/github-readme-stats"
           >
             <img
-              alt="Pd-041298-DEV Top Languages"
+              alt="Top Languages"
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priyankadubey190&langs_count=8&count_private=true&layout=compact&theme=vue-dark"
+              className={style.statImage}
             />
           </a>
         </p>
-        <br />
-        <p align="center">
+        <p>
           <a
             className="stat"
             href="https://github.com/Priyankadubey190/github-readme-streak-stats"
           >
             <img
-              title="🔥 Get streak stats for your profile at git.io/streak-stats"
-              alt="Pd-041298-DEV streak"
+              title="🔥 Streak stats"
+              alt="Streak Stats"
               src="https://github-readme-streak-stats.herokuapp.com/?user=Priyankadubey190&hide_border=true&theme=vue-dark"
+              className={style.statImage}
             />
           </a>
         </p>
-
-        <br />
-        <br />
-        <p align="center">
+        <p>
           <a
             className="stat"
             href="https://github.com/Priyankadubey190/github-readme-stats"
           >
             <img
-              alt="Pd Github Stats"
+              alt="GitHub Stats"
               src="https://github-readme-stats.vercel.app/api?username=Priyankadubey190&show_icons=true&locale=en&theme=vue-dark"
+              className={style.statImage}
             />
           </a>
         </p>

@@ -50,7 +50,7 @@ export default function Home() {
             <button
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1XP4NfTRZCxFkT9fM2Fu5H7mtbcCzYUR_/view?usp=sharing",
+                  "https://drive.google.com/file/d/1ishFJS-yG2Yn3jKcATXaB9sHJmi5XAp0/view?usp=sharing",
                   "_blank"
                 );
               }}

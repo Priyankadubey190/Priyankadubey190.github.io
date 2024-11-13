@@ -1,69 +1,174 @@
-.myproject{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-    width:80%;
-    margin:auto;
-}
-.maincen{
-    display: inline-block;
-    color: white;
-    font-size:50px;
-    font-weight:bold;
-    padding:50px;
-}
-.procon{
-    margin-bottom: 50px;
-    background: linear-gradient(to bottom,#4CAF53,white);
-}
-.myproject > div > img{
-    height: 300px;
-    width: 350px;
-    border:3px solid darkblue;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
+/* Main container for projects */
+.myproject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 
-.myproject > div > p{
-    font-size:20px;
-    /* line-height:1rem; */
+/* Header styling */
+.maincen {
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
 }
 
-.cen{
-    display: inline-block;
-    font-size:25px;
-    font-weight:bold;
-    color: #4CAF53;
-}
-.myproject > div > div > a{
-    color: white;
-    background-color: #4CAF53;
-    padding: 5px 10px 5px 10px;
-    font-size:25px;
-    border-radius:10px;
-    display: inline-block;
-}
-.probtn{
-    margin-top:50px;
-    /* margin-left: 100px;
-    padding-left: 30px; */
-}
-.apro{
-    margin-left: 20px;
+/* Overall container styling */
+.procon {
+  margin-bottom: 50px;
+  background: linear-gradient(to bottom, #4caf53, white);
 }
 
-@media (max-width:1000px){
-
-    .myproject{
-    grid-template-columns: repeat(2,1fr);
-
-    }
+/* Styling for each project card */
+.projectCard {
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
-@media (max-width:700px){
 
-    .myproject{
-    grid-template-columns: repeat(1,1fr);
+.projectCard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
 
-    }
+/* Image styling for project cards */
+.projectCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Project name styling */
+.cen {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf53;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* Project description styling */
+.projectCard p {
+  font-size: 16px;
+  padding: 10px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Links styling */
+.projectCard div a {
+  color: white;
+  background-color: #4caf53;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.projectCard div a:hover {
+  background-color: #45a049;
+}
+
+/* For mobile devices */
+@media (max-width: 1000px) {
+  .myproject {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 700px) {
+  .myproject {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .maincen {
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  .projectCard {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* For very small screens (extra mobile-friendly) */
+@media (max-width: 500px) {
+  .maincen {
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .projectCard {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+/* Styling for buttons inside project cards (links styled as buttons) */
+/* Styling for buttons inside project cards (links styled as buttons) */
+.button {
+  color: white;
+  background-color: #45a049;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px 5px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #45a049;
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.button:active {
+  background-color: #388e3c;
+  transform: translateY(0); /* Button goes back to normal when clicked */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 85, 0.5); /* Adding a focus outline */
+}
+
+/* For mobile devices */
+@media (max-width: 1000px) {
+  .button {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 700px) {
+  .button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
 }
